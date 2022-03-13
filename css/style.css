@@ -1,0 +1,57 @@
+.img {
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    width: 50%;
+}
+
+.column.text {
+    display: block;
+    margin: auto;
+}
+
+.card-header {
+    width: 100%;
+}
+
+.card-content.is-header {
+    background-color: rgb(245, 245, 245);
+}
+
+.is-divider.is-header {
+    margin-top: 0px;
+    background-color: rgb(219, 213, 205);
+}
+
+.section {
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.container.pl-6.pr-6.is-skills a {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ion-icon {
+    font-size: 26px;
+}
+
+li {
+ list-style-type: none;   
+}
+
+@media screen and (max-width: 800px) {
+    .section {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
