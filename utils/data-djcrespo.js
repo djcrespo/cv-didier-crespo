@@ -306,7 +306,7 @@ export const projects = [
     title: "Grupo Imper",
     can_access: true,
     description: "Landing page para la empresa Grupo Imper",
-    url: "",
+    url: "https://grupo-imper.onrender.com",
     technologies: [
       {
         label: "Front-end",
@@ -320,7 +320,7 @@ export const projects = [
     title: "Recudec",
     can_access: true,
     description: "Landing page para la empresa Recudec",
-    url: "",
+    url: "https://recudec.onrender.com",
     technologies: [
       {
         label: "Front-end",
@@ -334,7 +334,7 @@ export const projects = [
     title: "ANM Capital",
     can_access: true,
     description: "Landing page para la empresa AMN Capital",
-    url: "",
+    url: "https://anmcapital.onrender.com",
     technologies: [
       {
         label: "Front-end",
@@ -348,7 +348,7 @@ export const projects = [
     title: "Naajal",
     can_access: true,
     description: "Landing page para la empresa Naajal",
-    url: "",
+    url: "https://najaal.onrender.com",
     technologies: [
       {
         label: "Front-end",
