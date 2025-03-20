@@ -1,6 +1,6 @@
 export const djcrespoInfo = {
   name: "Didier Crespo Castilla",
-  bio: "<p>¡Hola! Soy <strong>Didier Crespo</strong>, un apasionado de la tecnología y un entusiasta del aprendizaje continuo. Siempre estoy buscando nuevas oportunidades para adquirir conocimientos y mejorar mis habilidades, y disfruto que cada detalle funcione a la perfección. Además, me gusta compartir lo que aprendo con quienes lo necesiten.</p>",
+  bio: "<p>¡Hola! Soy <strong>Didier Crespo</strong>, un apasionado de la tecnología y entusiasta del aprendizaje continuo. Siempre estoy buscando nuevas oportunidades para adquirir conocimientos y mejorar mis habilidades, y disfruto que cada detalle funcione a la perfección. Además, me gusta compartir lo que aprendo con quienes lo necesiten.</p>",
   age: 27,
   residence: "USA",
   freelance: true,
@@ -28,7 +28,7 @@ export const djcrespoInfo = {
       jobTitle: "Desarrollador FullStack",
       company: "ParamQ",
       dec: [
-        "Desarrollo de soluciones personalizadas para clientes utilizando tecnologías de frontend y backend como Vue.js, Ionic Framework, Node.js, Django y PostgreSQL.",
+        "Desarrollo de soluciones personalizadas para clientes utilizando tecnologías de frontend y backend como Vue.js, Ionic Framework, Node.js, Django, FastAPI y PostgreSQL.",
         "Integración de otras APIs de terceros en proyectos como pasarelas de pago (OpenPay).",
         "Implementación de despliegues automáticos con Github Actions en proyectos internos de la empresa."
       ],
@@ -39,11 +39,10 @@ export const djcrespoInfo = {
       jobTitle: "Desarrollador FullStack",
       company: "Autónomo",
       dec: [
-        "Desarrollo de páginas web a medida para empresas",
-        "Implementación de herramientas de terceros en las páginas",
+        "Desarrollo de soluciones personalizadas para clientes utilizando tecnologías de frontend y backend como Vue.js, Ionic Framework, Node.js, Django, FastAPI y PostgreSQL.",
         "Despliegue y alojamiento de las páginas en hostinger, con despliegue automático con GitHub"
       ],
-      date: "Agosto 2019 - 2023",
+      date: "Agosto 2019 - Actual",
     },
     {
       id: 3,
@@ -61,8 +60,10 @@ export const djcrespoInfo = {
     title: "Lenguajes",
     icons: "fa fa-code",
     items: [
-      { id: 1, text: "JavaScript" },
-      { id: 2, text: "Python" }
+      { id: 1, text: "HTML" },
+      { id: 2, text: "CSS" },
+      { id: 3, text: "JavaScript" },
+      { id: 4, text: "Python" }
     ],
   },
   frameworks: {
@@ -70,8 +71,9 @@ export const djcrespoInfo = {
     icons: "fa fa-list",
     items: [
       { id: 1, text: "Django" },
-      { id: 2, text: "Vue" },
-      { id: 3, text: "Ionic" }
+      { id: 2, text: "FastAPI" },
+      { id: 3, text: "Vue" },
+      { id: 4, text: "Ionic" }
     ],
   },
   cloud: {
@@ -186,66 +188,172 @@ export const djcrespoInfo = {
 
 export const projects = [
   {
-    id: 6,
-    img: "/images/djcrespo/projects/garvi.png",
-    title: "Skidha",
-    description: "",
-    technologies: []
+    id: 10,
+    img: "/images/djcrespo/projects/tarjetaflash.png",
+    title: "Tarjeta Flash",
+    can_access: true,
+    description: "Sistema para la gestión de tarjetas de presentación inteligentes. Hechas a partir de tarjetas NFC, redirigen a una página personalizada, por el cliente, donde sus prospectos podrán ver sus producto/servicios con sus catálogos y galería.",
+    url: "https://tarjetaflash.com",
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["Python/Django", "PostgreSQL", "Docker", "AWS/S3", "AWS/RDS", "AWS/ECR"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Nuxt.JS/Vue.JS", "Vuestic", "Tailwind CSS"]
+      },
+    ]
   },
   {
-    id: 7,
-    img: "/images/djcrespo/projects/garvi.png",
-    title: "Go-Agent",
-    description: "",
-    technologies: []
+    id: 9,
+    img: "/images/djcrespo/projects/maia.png",
+    title: "MAIA",
+    can_access: false,
+    description: "Plataforma para agilizar procesos escolares dentro de una institución, implementado en el ITMérida durante un tiempo, hecho por estudiantes y para los estudiantes; abarcando tramites de liberación de servicio social, hasta cuestionarios psicológicos y análisis de resultados con IA.",
+    url: "",
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["Python/Django", "PostgreSQL", "Docker", "AWS/S3", "AWS/RDS", "OpenAI"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Vue.JS", "Buefy", "Bulma CSS"]
+      },
+    ]
   },
   {
     id: 8,
     img: "/images/djcrespo/projects/garvi.png",
     title: "Garvi",
-    description: "",
-    technologies: []
+    can_access: false,
+    description: "Sistema a medida para la gestión de varios desarrollos y la venta de lotes/departamentos de la empresa.",
+    url: "",
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["Python/Django", "PostgreSQL", "Docker", "AWS/S3", "AWS/RDS"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Nuxt.JS/Vue.JS", "Buefy", "Bulma CSS"]
+      },
+    ]
   },
   {
-    id: 9,
-    img: "/images/djcrespo/projects/garvi.png",
-    title: "MAIA",
-    description: "",
-    technologies: []
+    id: 7,
+    img: "/images/djcrespo/projects/goagent.png",
+    title: "Go-Agent",
+    can_access: true,
+    description: "Sistema enfocado para agentes para la gestión de sus clientes y sus pólizas.",
+    url: "",
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["Python/Django", "PostgreSQL", "RabbitMQ", "Docker", "AWS/S3", "AWS/RDS", "AWS/ECR"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Nuxt.JS/Vue.JS", "Buefy", "Bulma CSS"]
+      },
+    ]
+  },
+  {
+    id: 6,
+    img: "/images/djcrespo/projects/skidha.png",
+    title: "Skidha",
+    can_access: true,
+    description: "Sistema para el control de entradas y salidas de alumnos con padres de familia y administrativos de la escuela.",
+    url: "https://www.skidha.com",
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["Python/Django", "Python/FastAPI", "JavaScript/WebSockets", "DevOps/Docker", "AWS/S3", "AWS/RDS", "AWS/ECR"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Nuxt.JS/Vue.JS", "Ionic/Angular", "Buefy", "Bulma CSS"]
+      },
+    ]
   },
   {
     id: 1,
     img: "/images/djcrespo/projects/jarkol.png",
     title: "Jarkol",
-    description: "",
-    technologies: []
+    can_access: true,
+    description: "Landing page para la empresa Jarkol",
+    url: "https://jarkol.com",
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["Python/FastAPI"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Nuxt.JS/Vue.JS", "Tailwind CSS"]
+      },
+    ]
   },
   {
     id: 2,
     img: "/images/djcrespo/projects/grupo_imper.png",
     title: "Grupo Imper",
-    description: "",
-    technologies: []
+    can_access: true,
+    description: "Landing page para la empresa Grupo Imper",
+    url: "",
+    technologies: [
+      {
+        label: "Front-end",
+        technologies: ["Nuxt.JS/Vue.JS", "Buefy", "Bulma CSS"]
+      }
+    ]
   },
   {
     id: 3,
     img: "/images/djcrespo/projects/recudec.png",
     title: "Recudec",
-    description: "",
-    technologies: []
+    can_access: true,
+    description: "Landing page para la empresa Recudec",
+    url: "",
+    technologies: [
+      {
+        label: "Front-end",
+        technologies: ["HTML", "Bootstrap", "JS"]
+      }
+    ]
   },
   {
     id: 4,
     img: "/images/djcrespo/projects/anmcapital.png",
     title: "ANM Capital",
-    description: "",
-    technologies: []
+    can_access: true,
+    description: "Landing page para la empresa AMN Capital",
+    url: "",
+    technologies: [
+      {
+        label: "Front-end",
+        technologies: ["HTML", "Bootstrap", "JS"]
+      }
+    ]
   },
   {
     id: 5,
     img: "/images/djcrespo/projects/najaal.png",
     title: "Naajal",
-    description: "",
-    technologies: []
+    can_access: true,
+    description: "Landing page para la empresa Naajal",
+    url: "",
+    technologies: [
+      {
+        label: "Front-end",
+        technologies: ["HTML", "CSS", "JS"]
+      }
+    ]
   }
 ];

@@ -53,9 +53,11 @@ export default {
       project: {}
     };
   },
+  mounted () {
+    window.scrollTo(0, 2);
+  },
   methods: {
     activeBlogPost(value) {
-      console.log(value)
       this.project = value
       navFunction.activeSection("blog-post", value);
       this.activeData = value;

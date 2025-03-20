@@ -13,7 +13,7 @@
     <div class="card-wrap">
       <div class="content blog-single">
         <!-- title -->
-        <div class="title">{{ navFunction.projectData ? navFunction.projectData.title : 'No hay' }}</div>
+        <div class="title">{{ navFunction.projectData ? navFunction.projectData.title : 'Sin información' }}</div>
 
         <!-- content -->
         <div class="row border-line-v">
@@ -32,27 +32,19 @@
               <!-- blog content -->
               <div class="blog-content">
                 <p>
-                  So striking at of to welcomed resolved. Northward by described
-                  up household therefore attention. Excellence decisively nay
-                  man yet impression for contrasted remarkably.
+                  {{ navFunction.projectData ? navFunction.projectData.description : 'Sin información' }}
                 </p>
-                <p>
-                  Forfeited you engrossed but gay sometimes explained. Another
-                  as studied it to evident. Merry sense given he be arise.
-                  Conduct at an replied removal an amongst. Remaining determine
-                  few her two cordially admitting old.
-                </p>
+                <blockquote v-if="navFunction.projectData && navFunction.projectData.can_access">
+                  <a :href="navFunction.projectData.url">Ver proyecto</a>
+                </blockquote>
+                <blockquote v-else>
+                  No disponible para visualizar
+                </blockquote>
+                <!--
                 <blockquote>
                   Vestibulum ante ipsum primis in faucibus orci luctus et
                   ultrices posuere cubilia Curae; Pellentesque suscipit.
                 </blockquote>
-                <p>
-                  Tiled say decay spoil now walls meant house. My mr interest
-                  thoughts screened of outweigh removing. Evening society
-                  musical besides inhabit ye my. Lose hill well up will he over
-                  on. Increasing sufficient everything men him admiration
-                  unpleasing sex.
-                </p>
                 <ul class="list-style">
                   <li>Greatest properly off ham exercise all.</li>
                   <li>Unsatiable invitation its possession nor off.</li>
@@ -65,39 +57,12 @@
                   Unpleasant astonished an diminution up partiality. Noisy an
                   their of meant. Death means up civil do an offer wound of.
                 </p>
+                -->
               </div>
 
-              <div class="post-text-bottom">
-                <div class="social-share">
-                  <span>Share</span>
-                  <a
-                    class="share-btn share-btn-facebook"
-                    title="Share on Facebook"
-                    ><i class="ion ion-social-facebook"></i
-                  ></a>
-                  <a
-                    class="share-btn share-btn-twitter"
-                    title="Share on Twitter"
-                    ><i class="ion ion-social-twitter"></i
-                  ></a>
-                  <a
-                    class="share-btn share-btn-linkedin"
-                    title="Share on Linkedin"
-                    ><i class="ion ion-social-linkedin"></i
-                  ></a>
-                  <a class="share-btn share-btn-reddit" title="Share on Reddit"
-                    ><i class="ion ion-social-reddit"></i
-                  ></a>
-                  <a
-                    class="share-btn share-btn-pinterest"
-                    title="Share on Pinterest"
-                    ><i class="ion ion-social-pinterest"></i
-                  ></a>
-                </div>
-                <span class="tags-links"
-                  >Taggs: <a href="#">code</a><a href="#">html</a
-                  ><a href="#">plugin</a><a href="#">wordpress</a></span
-                >
+              <div v-if="navFunction.projectData" class="post-text-bottom">
+                <span v-for="i in navFunction.projectData.technologies" class="tags-links"
+                  >{{ i.label }}: <a v-for="element in i.technologies">{{ element }}</a></span>
               </div>
             </div>
           </div>

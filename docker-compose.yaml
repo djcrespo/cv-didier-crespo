@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  web:
+    image: cv-djcrespo
+    restart: unless-stopped
+    container_name: cv-render
+    networks:
+      - default
+    environment:
+      - VIRTUAL_HOST=devcrespo.tech
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=devcrespo.tech
+        
+    expose:
+      - 80
+
+networks:
+  default:
+    external:
+      name: net-proxy

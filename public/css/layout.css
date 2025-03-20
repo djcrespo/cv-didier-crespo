@@ -806,8 +806,8 @@
 */
 /* 4.1 About */
 .info-list ul li {
-  display: inline-block;
-  width: 48%;
+  /*display: inline-block;*/
+  width: 100%;
   line-height: 1.6;
 }
 

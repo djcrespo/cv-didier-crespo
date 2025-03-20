@@ -24,13 +24,16 @@
             <ul>
               <li><strong>Ubicación . . . . .</strong> Yucatán, México</li>
               <li><strong>Teléfono . . . . .</strong> +52 999 9424 3891</li>
+              <li><strong>Email . . . . .</strong> dj.crespo.castilla@gmail.com</li>
             </ul>
           </div>
+          <!--
           <div class="info-list">
             <ul>
               <li><strong>Email . . . . .</strong> dj.crespo.castilla@gmail.com</li>
             </ul>
           </div>
+          -->
         </div>
         <div class="clear"></div>
       </div>
