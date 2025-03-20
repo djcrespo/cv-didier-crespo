@@ -3,7 +3,7 @@
     <div class="demo_container">
       <div class="demo_content">
         <div class="text-center">
-          <img src="images/ryan_bg2.png" alt="" class="logo" />
+          <!--<img src="images/ryan_bg2.png" alt="" class="logo" />-->
           <p style="margin-top: 10px">
             Resume CV & vCard Vue NuxtJS Tailwind CSS Template
           </p>
@@ -13,10 +13,12 @@
             v-for="demo in demos"
             class="col col-d-4 col-t-6 col-m-12 border-line-h"
           >
+            <!--
             <a :href="demo.link" target="_blank">
               <img :src="demo.img" :alt="demo.title" />
               <h5>0{{ demo.id }}. {{ demo.title }}</h5>
             </a>
+            -->
           </div>
         </div>
       </div>

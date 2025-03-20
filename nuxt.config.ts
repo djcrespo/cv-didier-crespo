@@ -1,8 +1,9 @@
+import { truncate } from "node:fs/promises";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ["@nuxtjs/tailwindcss", "nuxt-swiper"],
-
   app: {
     head: {
       title: "Didier Crespo Castilla - CV",
@@ -38,6 +39,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  ssr: false,
+  ssr: true,
   compatibilityDate: "2024-11-22",
 });
