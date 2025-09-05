@@ -7,9 +7,9 @@ services:
     networks:
       - default
     environment:
-      - VIRTUAL_HOST=devcrespo.tech
+      - VIRTUAL_HOST=portafolio.devcrespo.tech
       - VIRTUAL_PORT=3000
-      - LETSENCRYPT_HOST=devcrespo.tech
+      - LETSENCRYPT_HOST=portafolio.devcrespo.tech
         
     expose:
       - 3000

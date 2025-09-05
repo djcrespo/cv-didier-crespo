@@ -26,16 +26,27 @@ export const djcrespoInfo = {
     {
       id: 1,
       jobTitle: "Desarrollador FullStack",
+      company: "Efisense",
+      dec: [
+        "Desarrollo de soluciones FrontEnd/BackEnd enfocado a restaurantes.",
+        "Integración de otras APIs dentro de la empresa desarrolladas en PHP en frameworks como Codeigniter",
+        "Soporte técnico a clientes en distintos proyectos de la empresa."
+      ],
+      date: "Abril 2025 - Actualmente",
+    },
+    {
+      id: 2,
+      jobTitle: "Desarrollador FullStack",
       company: "ParamQ",
       dec: [
         "Desarrollo de soluciones personalizadas para clientes utilizando tecnologías de frontend y backend como Vue.js, Ionic Framework, Node.js, Django, FastAPI y PostgreSQL.",
         "Integración de otras APIs de terceros en proyectos como pasarelas de pago (OpenPay).",
         "Implementación de despliegues automáticos con Github Actions en proyectos internos de la empresa."
       ],
-      date: "Octubre 2021 - Actual",
+      date: "Octubre 2021 - Abril 2025",
     },
     {
-      id: 2,
+      id: 3,
       jobTitle: "Desarrollador FullStack",
       company: "Autónomo",
       dec: [
@@ -45,7 +56,7 @@ export const djcrespoInfo = {
       date: "Agosto 2019 - Actual",
     },
     {
-      id: 3,
+      id: 4,
       jobTitle: "Presidente estudiantil",
       company: "AAAI Student Chapter México",
       dec: [
@@ -188,6 +199,44 @@ export const djcrespoInfo = {
 
 export const projects = [
   {
+    id: 12,
+    img: "/images/djcrespo/projects/tarjetaflash.png",
+    title: "Gestión de metas",
+    can_access: false,
+    description: "Sistema para la gestión de metas dentro de un restaurante, con incentivos para motivar a los empleados.",
+    url: null,
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["PHP/Codeigniter", "MySQL"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Electron.JS/Vue.JS", "TailWind CSS"]
+      },
+    ]
+  },
+  {
+    id: 11,
+    img: "/images/djcrespo/projects/tarjetaflash.png",
+    title: "Lista de espera",
+    can_access: false,
+    description: "Actualización al sistema de gestión de comensales en un resataurante que están en espera, a partir de un proyecto existente. Implementado en Boston's, SushiRoll y otros restaurantes",
+    url: null,
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["PHP/Codeigniter", "MySQL"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["Electron.JS/Vue.JS", "Boostrap"]
+      },
+    ]
+  },
+  {
     id: 10,
     img: "/images/djcrespo/projects/tarjetaflash.png",
     title: "Tarjeta Flash",
@@ -230,7 +279,7 @@ export const projects = [
     img: "/images/djcrespo/projects/garvi.png",
     title: "Garvi",
     can_access: false,
-    description: "Sistema a medida para la gestión de varios desarrollos y la venta de lotes/departamentos de la empresa.",
+    description: "Sistema a medida para la gestión de varios desarrollos y venta de lotes/departamentos de la empresa.",
     url: "",
     screenshots: [],
     technologies: [

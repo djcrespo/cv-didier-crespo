@@ -10,7 +10,7 @@
     "
     id="blog-post"
   >
-    <div class="card-wrap">
+    <div v-if="navFunction.projectData && Object.keys(navFunction.projectData).length > 0" class="card-wrap">
       <div class="content blog-single">
         <!-- title -->
         <div class="title">{{ navFunction.projectData ? navFunction.projectData.title : 'Sin información' }}</div>
