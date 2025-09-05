@@ -198,44 +198,44 @@ export const djcrespoInfo = {
 };
 
 export const projects = [
-  {
-    id: 12,
-    img: "/images/djcrespo/projects/tarjetaflash.png",
-    title: "Gestión de metas",
-    can_access: false,
-    description: "Sistema para la gestión de metas dentro de un restaurante, con incentivos para motivar a los empleados.",
-    url: null,
-    screenshots: [],
-    technologies: [
-      {
-        label: "Back-end",
-        technologies: ["PHP/Codeigniter", "MySQL"]
-      },
-      {
-        label: "Front-end",
-        technologies: ["Electron.JS/Vue.JS", "TailWind CSS"]
-      },
-    ]
-  },
-  {
-    id: 11,
-    img: "/images/djcrespo/projects/tarjetaflash.png",
-    title: "Lista de espera",
-    can_access: false,
-    description: "Actualización al sistema de gestión de comensales en un resataurante que están en espera, a partir de un proyecto existente. Implementado en Boston's, SushiRoll y otros restaurantes",
-    url: null,
-    screenshots: [],
-    technologies: [
-      {
-        label: "Back-end",
-        technologies: ["PHP/Codeigniter", "MySQL"]
-      },
-      {
-        label: "Front-end",
-        technologies: ["Electron.JS/Vue.JS", "Boostrap"]
-      },
-    ]
-  },
+  // {
+  //   id: 12,
+  //   img: "/images/djcrespo/projects/tarjetaflash.png",
+  //   title: "Gestión de metas",
+  //   can_access: false,
+  //   description: "Sistema para la gestión de metas dentro de un restaurante, con incentivos para motivar a los empleados.",
+  //   url: null,
+  //   screenshots: [],
+  //   technologies: [
+  //     {
+  //       label: "Back-end",
+  //       technologies: ["PHP/Codeigniter", "MySQL"]
+  //     },
+  //     {
+  //       label: "Front-end",
+  //       technologies: ["Electron.JS/Vue.JS", "TailWind CSS"]
+  //     },
+  //   ]
+  // },
+  // {
+  //   id: 11,
+  //   img: "/images/djcrespo/projects/tarjetaflash.png",
+  //   title: "Lista de espera",
+  //   can_access: false,
+  //   description: "Actualización al sistema de gestión de comensales en un resataurante que están en espera, a partir de un proyecto existente. Implementado en Boston's, SushiRoll y otros restaurantes",
+  //   url: null,
+  //   screenshots: [],
+  //   technologies: [
+  //     {
+  //       label: "Back-end",
+  //       technologies: ["PHP/Codeigniter", "MySQL"]
+  //     },
+  //     {
+  //       label: "Front-end",
+  //       technologies: ["Electron.JS/Vue.JS", "Boostrap"]
+  //     },
+  //   ]
+  // },
   {
     id: 10,
     img: "/images/djcrespo/projects/tarjetaflash.png",
