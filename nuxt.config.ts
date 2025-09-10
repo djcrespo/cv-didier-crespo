@@ -2,8 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ["@nuxtjs/tailwindcss", "nuxt-swiper"],
-  
-  // Configuración de la aplicación
   app: {
     head: {
       title: "Didier Crespo Castilla - CV",
@@ -25,71 +23,30 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
         },
-        { rel: "stylesheet", href: "/assets/css/main.css" },
-        { rel: "stylesheet", href: "/css/swiper-slider.css" },
-        { rel: "stylesheet", href: "/css/basic.css" },
-        { rel: "stylesheet", href: "/css/layout.css" },
-        { rel: "stylesheet", href: "/css/blogs.css" },
-        { rel: "stylesheet", href: "/css/ionicons.css" },
-        { rel: "stylesheet", href: "/css/magnific-popup.css" },
-        { rel: "stylesheet", href: "/css/animate.css" },
-        { rel: "stylesheet", href: "/css/owl.carousel.css" },
-        { rel: "stylesheet", href: "/css/gradient.css" },
-        { rel: "shortcut icon", href: "/images/favicons/favicon.ico" },
+        { rel: "stylesheet", href: "/devcrespo/assets/css/main.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/swiper-slider.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/basic.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/layout.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/blogs.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/ionicons.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/magnific-popup.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/animate.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/owl.carousel.css" },
+        { rel: "stylesheet", href: "/devcrespo/css/gradient.css" },
+        { rel: "shortcut icon", href: "/devcrespo/images/favicons/favicon.ico" },
       ],
     },
     
-    // Configuración base URL para assets y rutas
+    // SOLO ESTAS DOS LÍNEAS SON NECESARIAS PARA LOS ASSETS
     baseURL: '/devcrespo/',
-    
-    // Configuración build assets
     buildAssetsDir: '/devcrespo/_nuxt/'
   },
   
-  // Configuración del runtime
-  runtimeConfig: {
-    public: {
-      baseURL: process.env.NODE_ENV === 'production' ? 'https://serveless.paramq.com/devcrespo' : ''
-    }
+  // Configuración de build para assets públicos
+  build: {
+    // No assetsDir property here; use app.buildAssetsDir instead
   },
   
-  // Configuración de nitro para el deploy
-  nitro: {
-    preset: 'node-server',
-    serveStatic: true,
-    baseURL: '/devcrespo',
-    
-    // Configuración para reverse proxy si es necesario
-    routeRules: {
-      '/devcrespo/**': { 
-        proxy: { 
-          to: '/**' 
-        } 
-      }
-    }
-  },
-  
-  // Configuración del router
-  router: {
-    base: '/devcrespo/',
-    options: {
-      strict: false
-    }
-  },
-  
-  // SSR activado
   ssr: true,
   compatibilityDate: "2024-11-22",
-  
-  // Configuración de build
-  build: {
-    publicPath: '/devcrespo/_nuxt/'
-  },
-  
-  // Configuración de vite (opcional)
-  vite: {
-    server: {
-      hmr: process.env.NODE_ENV === 'development' ? {} : false
-    }
-  }
 });
