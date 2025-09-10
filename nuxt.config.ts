@@ -1,9 +1,9 @@
-import { truncate } from "node:fs/promises";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ["@nuxtjs/tailwindcss", "nuxt-swiper"],
+  
+  // Configuración de la aplicación
   app: {
     head: {
       title: "Didier Crespo Castilla - CV",
@@ -38,7 +38,58 @@ export default defineNuxtConfig({
         { rel: "shortcut icon", href: "/images/favicons/favicon.ico" },
       ],
     },
+    
+    // Configuración base URL para assets y rutas
+    baseURL: '/devcrespo/',
+    
+    // Configuración build assets
+    buildAssetsDir: '/devcrespo/_nuxt/'
   },
+  
+  // Configuración del runtime
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.NODE_ENV === 'production' ? 'https://serveless.paramq.com/devcrespo' : ''
+    }
+  },
+  
+  // Configuración de nitro para el deploy
+  nitro: {
+    preset: 'node-server',
+    serveStatic: true,
+    baseURL: '/devcrespo',
+    
+    // Configuración para reverse proxy si es necesario
+    routeRules: {
+      '/devcrespo/**': { 
+        proxy: { 
+          to: '/**' 
+        } 
+      }
+    }
+  },
+  
+  // Configuración del router
+  router: {
+    base: '/devcrespo/',
+    options: {
+      strict: false
+    }
+  },
+  
+  // SSR activado
   ssr: true,
   compatibilityDate: "2024-11-22",
+  
+  // Configuración de build
+  build: {
+    publicPath: '/devcrespo/_nuxt/'
+  },
+  
+  // Configuración de vite (opcional)
+  vite: {
+    server: {
+      hmr: process.env.NODE_ENV === 'development' ? {} : false
+    }
+  }
 });
