@@ -38,8 +38,8 @@ export default defineNuxtConfig({
     },
     
     // SOLO ESTAS DOS LÍNEAS SON NECESARIAS PARA LOS ASSETS
-    baseURL: '/devcrespo/',
-    buildAssetsDir: '/devcrespo/_nuxt/'
+    // baseURL: '/',
+    // buildAssetsDir: '/_nuxt/'
   },
   
   // Configuración de build para assets públicos
