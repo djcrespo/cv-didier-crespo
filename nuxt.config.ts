@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     head: {
       title: "Didier Crespo Castilla - CV",
       htmlAttrs: {
-        lang: "en",
+        lang: "es",
       },
       meta: [
         { charset: "utf-8" },
@@ -38,8 +38,8 @@ export default defineNuxtConfig({
     },
     
     // SOLO ESTAS DOS LÍNEAS SON NECESARIAS PARA LOS ASSETS
-    baseURL: '/devcrespo/',
-    buildAssetsDir: '/devcrespo/_nuxt/'
+    // baseURL: '/',
+    // buildAssetsDir: '/_nuxt/'
   },
   
   // Configuración de build para assets públicos
