@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   portafolio:
     build:
@@ -6,16 +8,14 @@ services:
     restart: unless-stopped
     container_name: cv-djcrespo
     networks:
-      - default
+      - net-proxy
     environment:
       - VIRTUAL_HOST=portafolio.djcrespo.dev
       - VIRTUAL_PORT=3000
       - LETSENCRYPT_HOST=portafolio.djcrespo.dev
-        
     expose:
       - 3000
 
 networks:
-  default:
-    external:
-      name: net-proxy
+  net-proxy:
+    external: true
