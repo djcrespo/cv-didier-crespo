@@ -12,6 +12,7 @@
           <MySkillsSkillCategory :knowledges="djcrespoInfo.frontend" />
           <MySkillsSkillCategory :knowledges="djcrespoInfo.databases" />
           <MySkillsSkillCategory :knowledges="djcrespoInfo.cloud" />
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.ai" />
           <MySkillsSkillCategory :knowledges="djcrespoInfo.payments" />
           <MySkillsSkillCategory :knowledges="djcrespoInfo.others" />
           <div class="clear"></div>

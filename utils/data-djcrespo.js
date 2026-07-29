@@ -25,6 +25,19 @@ export const djcrespoInfo = {
   experiences: [
     {
       id: 1,
+      jobTitle: "Desarrollador Full Stack",
+      company: "MasPaketes",
+      dec: [
+        "Desarrollé soluciones FrontEnd/Backend para la gestión de ventas de guías de paquetería.",
+        "API construida en Django/Django REST Framework.",
+        "Frontend construido en PHP.",
+        "Desarrollo de algoritmos para la toma de decisiones en ventas.",
+        "Colaboré directamente con equipos de TI para la integración de nuevos proveedores en el sistema."
+      ],
+      date: "Noviembre 2025 - Actualmente",
+    },
+    {
+      id: 2,
       jobTitle: "Desarrollador FullStack",
       company: "Efisense",
       dec: [
@@ -33,10 +46,10 @@ export const djcrespoInfo = {
         "Colaboración en la arquitectura de microservicios y optimización de bases de datos.",
         "Integración de APIs internas desarrolladas en PHP/TypeScript y soporte técnico a clientes."
       ],
-      date: "Abril 2025 - Actualmente",
+      date: "Abril 2025 - Noviembre 2025",
     },
     {
-      id: 2,
+      id: 3,
       jobTitle: "Desarrollador FullStack",
       company: "Cosvion",
       dec: [
@@ -48,7 +61,7 @@ export const djcrespoInfo = {
       date: "Octubre 2021 - Abril 2025",
     },
     {
-      id: 3,
+      id: 4,
       jobTitle: "Desarrollador FullStack",
       company: "Autónomo",
       dec: [
@@ -59,7 +72,7 @@ export const djcrespoInfo = {
       date: "Agosto 2019 - Actual",
     },
     {
-      id: 4,
+      id: 5,
       jobTitle: "Presidente Capítulo Estudiantil",
       company: "AAAI Student Chapter México",
       dec: [
@@ -90,7 +103,6 @@ export const djcrespoInfo = {
       { id: 4, text: "Django" },
       { id: 5, text: "FastAPI" },
       { id: 6, text: "Express" },
-      { id: 7, text: "NestJS" },
       { id: 8, text: "CodeIgniter" }
     ],
   },
@@ -132,13 +144,21 @@ export const djcrespoInfo = {
       { id: 8, text: "CI/CD" }
     ],
   },
+  ai: {
+    title: "Inteligencia Artificial",
+    icons: "fa fa-microchip",
+    items: [
+      { id: 1, text: "IA" },
+      { id: 2, text: "Opencode" },
+      { id: 3, text: "Claude" },
+      { id: 4, text: "Local LLMs" }
+    ],
+  },
   payments: {
     title: "Pasarelas de Pago",
     icons: "fa fa-credit-card",
     items: [
-      { id: 1, text: "Stripe" },
-      { id: 2, text: "PayPal" },
-      { id: 3, text: "Conekta" }
+      { id: 1, text: "OpenPay" },
     ],
   },
   others: {
@@ -213,6 +233,25 @@ export const projects = [
   //     },
   //   ]
   // },
+  {
+    id: 11,
+    img: "/images/djcrespo/projects/maspaketes.png",
+    title: "MasPaketes",
+    can_access: true,
+    description: "Sistema web para la gestión y venta de guías de paquetería. Desarrollado con Django y Django REST Framework en el backend y PHP en el frontend. Incluye algoritmos para la toma de decisiones en ventas e integración de múltiples proveedores de paquetería.",
+    url: "https://maspaketes.com/",
+    screenshots: [],
+    technologies: [
+      {
+        label: "Back-end",
+        technologies: ["Python/Django", "Django REST Framework"]
+      },
+      {
+        label: "Front-end",
+        technologies: ["PHP"]
+      },
+    ]
+  },
   {
     id: 10,
     img: "/images/djcrespo/projects/tarjetaflash.png",
