@@ -1,10 +1,10 @@
 export const djcrespoInfo = {
   name: "Didier Crespo Castilla",
-  bio: "<p>¡Hola! Soy <strong>Didier Crespo</strong>, un apasionado de la tecnología y entusiasta del aprendizaje continuo. Siempre estoy buscando nuevas oportunidades para adquirir conocimientos y mejorar mis habilidades, y disfruto que cada detalle funcione a la perfección. Además, me gusta compartir lo que aprendo con quienes lo necesiten.</p>",
+  bio: "<p>Ingeniero en Sistemas Computacionales con más de 4 años de experiencia diseñando, desarrollando y desplegando aplicaciones web escalables y seguras. Especializado en arquitecturas de microservicios, integración de APIs y despliegue en la nube (AWS), garantizando alta disponibilidad y eficiencia operativa.</p>",
   age: 27,
-  residence: "USA",
+  residence: "México",
   freelance: true,
-  address: "New York, USA",
+  address: "Mérida, Yuc. Mexico",
   typeingAnimation: [
     "Front-End developer",
     "Back-End developer",
@@ -28,20 +28,22 @@ export const djcrespoInfo = {
       jobTitle: "Desarrollador FullStack",
       company: "Efisense",
       dec: [
-        "Desarrollo de soluciones FrontEnd/BackEnd enfocado a restaurantes.",
-        "Integración de otras APIs dentro de la empresa desarrolladas en PHP en frameworks como Codeigniter",
-        "Soporte técnico a clientes en distintos proyectos de la empresa."
+        "Implementación de soluciones tecnológicas para la industria restaurantera.",
+        "Desarrollo de sistemas POS y plataformas digitales para pedidos en línea y reservaciones.",
+        "Colaboración en la arquitectura de microservicios y optimización de bases de datos.",
+        "Integración de APIs internas desarrolladas en PHP/TypeScript y soporte técnico a clientes."
       ],
       date: "Abril 2025 - Actualmente",
     },
     {
       id: 2,
       jobTitle: "Desarrollador FullStack",
-      company: "ParamQ",
+      company: "Cosvion",
       dec: [
-        "Desarrollo de soluciones personalizadas para clientes utilizando tecnologías de frontend y backend como Vue.js, Ionic Framework, Node.js, Django, FastAPI y PostgreSQL.",
-        "Integración de otras APIs de terceros en proyectos como pasarelas de pago (OpenPay).",
-        "Implementación de despliegues automáticos con Github Actions en proyectos internos de la empresa."
+        "Creación de soluciones de software a la medida para clientes en México.",
+        "Desarrollo de APIs robustas con Django y FastAPI, asegurando eficiencia y escalabilidad.",
+        "Liderazgo técnico en la implementación de pasarelas de pago (OpenPay) y soluciones de e-commerce.",
+        "Implementación de despliegues automáticos con GitHub Actions en proyectos internos de la empresa."
       ],
       date: "Octubre 2021 - Abril 2025",
     },
@@ -50,151 +52,126 @@ export const djcrespoInfo = {
       jobTitle: "Desarrollador FullStack",
       company: "Autónomo",
       dec: [
-        "Desarrollo de soluciones personalizadas para clientes utilizando tecnologías de frontend y backend como Vue.js, Ionic Framework, Node.js, Django, FastAPI y PostgreSQL.",
-        "Despliegue y alojamiento de las páginas en hostinger, con despliegue automático con GitHub"
+        "Desarrollo de aplicaciones web a la medida con Django, FastAPI, Vue.js e Ionic.",
+        "Implementación de pasarelas de pago como Stripe, PayPal y Conekta.",
+        "Despliegue y administración de servidores en AWS y Hostinger, con integración continua mediante GitHub Actions."
       ],
       date: "Agosto 2019 - Actual",
     },
     {
       id: 4,
-      jobTitle: "Presidente estudiantil",
+      jobTitle: "Presidente Capítulo Estudiantil",
       company: "AAAI Student Chapter México",
       dec: [
-        "Lider del equipo de desarrollo de proyectos internos",
-        "Ponente en varios talleres y conferencias.",
-        "Lider de la división de Software."
+        "Representante oficial ante la Association for the Advancement of Artificial Intelligence.",
+        "Organización de conferencias, talleres y hackathons sobre Inteligencia Artificial.",
+        "Promoción de la educación en IA y networking entre estudiantes y profesionales."
       ],
-      date: "2014 - 2023",
+      date: "2021 - 2023",
     },
   ],
-  lenguages: {
-    title: "Lenguajes",
-    icons: "fa fa-code",
+  architecture: {
+    title: "Arquitectura",
+    icons: "fa fa-sitemap",
     items: [
-      { id: 1, text: "HTML" },
-      { id: 2, text: "CSS" },
-      { id: 3, text: "JavaScript" },
-      { id: 4, text: "Python" }
+      { id: 1, text: "Microservicios" },
+      { id: 2, text: "REST API" },
+      { id: 3, text: "API Gateway" },
+      { id: 4, text: "Serverless" }
     ],
   },
-  frameworks: {
-    title: "Frameworks",
-    icons: "fa fa-list",
+  backend: {
+    title: "Backend",
+    icons: "fa fa-server",
     items: [
-      { id: 1, text: "Django" },
-      { id: 2, text: "FastAPI" },
-      { id: 3, text: "Vue" },
-      { id: 4, text: "Ionic" }
+      { id: 1, text: "Python" },
+      { id: 2, text: "PHP" },
+      { id: 3, text: "Node.js" },
+      { id: 4, text: "Django" },
+      { id: 5, text: "FastAPI" },
+      { id: 6, text: "Express" },
+      { id: 7, text: "NestJS" },
+      { id: 8, text: "CodeIgniter" }
+    ],
+  },
+  frontend: {
+    title: "Frontend",
+    icons: "fa fa-desktop",
+    items: [
+      { id: 1, text: "JavaScript" },
+      { id: 2, text: "TypeScript" },
+      { id: 3, text: "HTML" },
+      { id: 4, text: "CSS" },
+      { id: 5, text: "Vue.js" },
+      { id: 6, text: "Nuxt" },
+      { id: 7, text: "Ionic" },
+      { id: 8, text: "Tailwind CSS" }
+    ],
+  },
+  databases: {
+    title: "Bases de Datos",
+    icons: "fa fa-database",
+    items: [
+      { id: 1, text: "PostgreSQL" },
+      { id: 2, text: "MySQL" },
+      { id: 3, text: "MongoDB" },
+      { id: 4, text: "SQLite" }
     ],
   },
   cloud: {
-    title: "Nube",
+    title: "Cloud & DevOps",
     icons: "fa fa-cloud",
     items: [
-      { id: 1, text: "AWS" },
-      { id: 2, text: "Hostinger" }
+      { id: 1, text: "AWS S3" },
+      { id: 2, text: "AWS RDS" },
+      { id: 3, text: "AWS EC2" },
+      { id: 4, text: "AWS SES" },
+      { id: 5, text: "AWS SQS" },
+      { id: 6, text: "Docker" },
+      { id: 7, text: "GitHub Actions" },
+      { id: 8, text: "CI/CD" }
     ],
   },
-  devops: {
-    title: "DevOps",
-    icons: "fa fa-code-fork",
+  payments: {
+    title: "Pasarelas de Pago",
+    icons: "fa fa-credit-card",
     items: [
-      { id: 1, text: "Docker" },
-      { id: 2, text: "GitHub Actions" }
+      { id: 1, text: "Stripe" },
+      { id: 2, text: "PayPal" },
+      { id: 3, text: "Conekta" }
+    ],
+  },
+  others: {
+    title: "Otros",
+    icons: "fa fa-cogs",
+    items: [
+      { id: 1, text: "SEO" },
+      { id: 2, text: "Web Scraping" },
+      { id: 3, text: "WebSocket" },
+      { id: 4, text: "API Integration" }
     ],
   },
   educations: [
+    // {
+    //   id: 0,
+    //   date: "2025 - 2026",
+    //   name: "UNIR México",
+    //   address: "Online",
+    //   dec: "Maestría en Ciencias en Inteligencia Artificial",
+    // },
     {
       id: 1,
       date: "2018 - 2024",
       name: "Instituto Tecnológico de Mérida",
       address: "Campus poniente - Yucatán",
       dec: "Ing. en Sistemas Computacionales",
-    },
-    {
-      id: 2,
-      date: "2014 - 2018",
-      name: "Universidad Autónoma de Yucatán",
-      address: "Preparatoria 2 - Yucatán",
-      dec: "Bachillerato - Técnico en social media manager",
     }
   ],
-  services: [
-    {
-      id: 1,
-      icon: "fa fa-microphone",
-      title: "Lead Vocal",
-      desc: "The lead vocalist in popular music is typically the member of a group.",
-    },
-    {
-      id: 2,
-      icon: "fa fa-music",
-      title: "Record Guitars",
-      desc: "Music copying, writing, creating, transcription, arranging and composition services.",
-    },
-    {
-      id: 3,
-      icon: "fa fa-soundcloud",
-      title: "Soundcloud Mix",
-      desc: "Made a great new DJ mix and you want to get it online and out to the world",
-    },
-    {
-      id: 4,
-      icon: "fa fa-gamepad",
-      title: "Music for Games, Apps",
-      desc: "Developing tracks and unique music for android, ios and video games.",
-    },
-  ],
-  pricing: {
-    basic: {
-      icon: "fa fa-volume-down",
-      price: 22,
-      details: [
-        { id: 1, title: "Lead Vocal", disable: false, new: false },
-        { id: 2, title: "Record Guitars", disable: false, new: false },
-        { id: 3, title: "Soundcloud Mix", disable: false, new: false },
-        { id: 4, title: "Music for Games", disable: true, new: true },
-        { id: 5, title: "Music for Apps", disable: true, new: true },
-      ],
-    },
-    pro: {
-      icon: "fa fa-volume-up",
-      price: 48,
-      details: [
-        { id: 1, title: "Lead Vocal", disable: false, new: false },
-        { id: 2, title: "Record Guitars", disable: false, new: false },
-        { id: 3, title: "Soundcloud Mix", disable: false, new: false },
-        { id: 4, title: "Music for Games", disable: false, new: true },
-        { id: 5, title: "Music for Apps", disable: false, new: true },
-      ],
-    },
-  },
-  clients: [
-    { id: 1, img: "/images/clients/client_1.png" },
-    { id: 2, img: "/images/clients/client_2.png" },
-    { id: 3, img: "/images/clients/client_3.png" },
-    { id: 4, img: "/images/clients/client_4.png" },
-  ],
-  porgressBar: {
-    title: "Design",
-    icon: "fa fa-paint-brush",
-    skills: [
-      { id: 1, name: "Motivation / Determination", value: 90 },
-      { id: 2, name: "Violin Expertise", value: 65 },
-      { id: 3, name: "Creativity", value: 75 },
-      { id: 4, name: "Guitar Expertise", value: 85 },
-    ],
-  },
-  porgressCircle: {
-    title: "Read Music",
-    icon: "fa fa-music",
-    skills: [
-      { id: 1, name: "Chords", value: 90 },
-      { id: 2, name: "Intervals", value: 75 },
-      { id: 3, name: "Melody", value: 85 },
-      { id: 4, name: "Pitch", value: 95 },
-    ],
-  },
+  services: [],
+  pricing: {},
+  clients: [],
+  porgressBar: {},
+  porgressCircle: {},
 };
 
 export const projects = [

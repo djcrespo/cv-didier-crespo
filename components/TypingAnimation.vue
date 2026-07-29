@@ -15,11 +15,11 @@ export default {
     },
   },
 
-  data: () => {
+  data: function () {
     return {
       typeValue: "",
       typeStatus: false,
-      typeArray: [],
+      typeArray: this.arr || [],
       typingSpeed: 200,
       erasingSpeed: 100,
       newTextDelay: 2000,

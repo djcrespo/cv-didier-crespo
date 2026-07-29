@@ -22,15 +22,24 @@
           </div>
           <div class="info-list">
             <ul>
-              <li><strong>Ubicación . . . . .</strong> Yucatán, México</li>
-              <li><strong>Teléfono . . . . .</strong> +52 999 5680730</li>
-              <li><strong>Email . . . . .</strong> dj.crespo.castilla@gmail.com</li>
+              <li>
+                <strong>Ubicación . . . . .</strong>
+                <a href="https://www.google.com/maps/search/?api=1&query=Yucatán,+México" target="_blank" rel="noopener noreferrer">Yucatán, México</a>
+              </li>
+              <li>
+                <strong>Teléfono . . . . .</strong>
+                <a href="tel:+529991817834">+52 999 181 7834</a>
+              </li>
+              <li>
+                <strong>Email . . . . .</strong>
+                <a href="mailto:contacto@djcrespo.dev">contacto@djcrespo.dev</a>
+              </li>
             </ul>
           </div>
           <!--
           <div class="info-list">
             <ul>
-              <li><strong>Email . . . . .</strong> dj.crespo.castilla@gmail.com</li>
+              <li><strong>Email . . . . .</strong> contacto@djcrespo.dev</li>
             </ul>
           </div>
           -->
@@ -93,3 +102,13 @@
     -->
   </ActiveSection>
 </template>
+
+<style scoped>
+.info-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.info-list a:hover {
+  text-decoration: underline;
+}
+</style>

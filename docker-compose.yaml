@@ -1,15 +1,16 @@
-version: '3.7'
 services:
-  web:
-    image: cv-djcrespo
+  portafolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
-    container_name: cv-render
+    container_name: cv-djcrespo
     networks:
       - default
     environment:
-      - VIRTUAL_HOST=portafolio.devcrespo.tech
+      - VIRTUAL_HOST=portafolio.djcrespo.dev
       - VIRTUAL_PORT=3000
-      - LETSENCRYPT_HOST=portafolio.devcrespo.tech
+      - LETSENCRYPT_HOST=portafolio.djcrespo.dev
         
     expose:
       - 3000

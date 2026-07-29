@@ -7,13 +7,13 @@
       <div class="content skills">
         <div class="title">Mis habilidades</div>
         <div class="row">
-          <MySkillsLenguages />
-          <MySkillsFrameworks />
-          <MySkillsCloud />
-          <MySkillsDevOps />
-          <!--<SkillLanguages />-->
-          <!--<SkillPorgressCircle />-->
-          <!--<Knowledge />-->
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.architecture" />
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.backend" />
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.frontend" />
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.databases" />
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.cloud" />
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.payments" />
+          <MySkillsSkillCategory :knowledges="djcrespoInfo.others" />
           <div class="clear"></div>
         </div>
       </div>
@@ -50,6 +50,8 @@
 </template>
 
 <script setup>
+import { djcrespoInfo } from "../utils/data-djcrespo";
+
 useHead({
   link: [
     { rel: "stylesheet", href: "/css/new-skin/new-skin.css" },
