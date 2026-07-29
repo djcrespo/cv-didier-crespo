@@ -397,7 +397,7 @@ export const projects = [
     id: 4,
     img: "/images/djcrespo/projects/anmcapital.png",
     title: "ANM Capital",
-    can_access: true,
+    can_access: false,
     description: "Landing page para la empresa AMN Capital",
     url: "https://anmcapital.onrender.com",
     technologies: [
